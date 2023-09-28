@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import Results from "../components/Results";
 import Banner from "../components/Banner";
-import { Usefetch } from "../style/Usefetch";
+import { Usefetch } from "../util/Usefetch";
 import { Loader } from "../style/atoms";
 
 function Home() {
