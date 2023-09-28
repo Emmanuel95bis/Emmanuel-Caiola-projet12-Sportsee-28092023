@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: #020203;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header ul {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+.header span {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  margin-left: 0px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.header img {
+  width: 178px;
+  height: 61px;
+}

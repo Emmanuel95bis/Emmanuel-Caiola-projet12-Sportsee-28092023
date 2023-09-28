@@ -1,0 +1,123 @@
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(1)
+  > svg {
+  border-radius: 5px;
+}
+
+.Legend-container {
+  width: 147px;
+  height: 48px;
+}
+
+.Legend-container span {
+  color: #ffffff;
+  opacity: 50%;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* #root
+  > div:nth-child(2)
+  > svg
+  > g:nth-child(5)
+  > g.recharts-layer.recharts-line-dots
+  > circle {
+  display: none;
+} */
+
+#root
+  > div
+  > svg
+  > g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis
+  > line {
+  display: none;
+}
+
+#root
+  > div:nth-child(3)
+  > svg
+  > g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis
+  > g
+  line {
+  display: none;
+}
+
+/* #root > div:nth-child(2) > svg > g {
+  display: none;
+}*/
+
+#root > div:nth-child(3) > svg {
+  background-color: #ff0000;
+}
+
+/* #root
+  > div:nth-child(5)
+  > svg
+  > g.recharts-layer.recharts-line
+  > g.recharts-layer.recharts-line-dots
+  circle { */
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(1)
+  > svg
+  > g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis
+  > g
+  > g
+  > line {
+  display: none;
+}
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(1)
+  > svg
+  > g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis
+  > line {
+  display: none;
+}
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(1)
+  > svg
+  > g.recharts-layer.recharts-line
+  > g.recharts-layer.recharts-line-dots
+  > circle {
+  display: none;
+}
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(1)
+  > svg
+  > g.recharts-layer.recharts-line
+  > g.recharts-layer.recharts-line-dots
+  > circle:nth-child(5) {
+  display: block;
+}
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(1)
+  > svg {
+  background-color: #ff0000;
+}

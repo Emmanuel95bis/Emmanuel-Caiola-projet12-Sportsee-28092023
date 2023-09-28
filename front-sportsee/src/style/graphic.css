@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.recharts-bar-rectangles {
+  width: 2px;
+}
+
+path {
+  width: 2px;
+}

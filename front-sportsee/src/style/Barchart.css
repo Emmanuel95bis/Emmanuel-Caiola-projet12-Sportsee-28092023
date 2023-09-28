@@ -1,0 +1,126 @@
+/* .chartContainer {
+  background-color: #fbfbfb;
+  width: 900px;
+}
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.chartContainer
+  > div
+  > svg
+  > g.recharts-layer.recharts-brush {
+  display: none;
+}
+
+.legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.legendGraphic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#root
+  > div:nth-child(3)
+  > div.recharts-legend-wrapper
+  > div
+  > div
+  > span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#root
+  > div:nth-child(3)
+  > div.recharts-legend-wrapper
+  > div
+  > div
+  > span:nth-child(4) {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(1)
+  > svg
+  > g.recharts-layer.recharts-line
+  > path {
+  color: white;
+}
+
+#root
+  > div.chartContainer
+  > div
+  > svg
+  > g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis
+  > g
+  > g:nth-child(2n + 1)
+  > text
+  > tspan {
+  margin-top: 20px;
+  color: red;
+}
+
+.legend span {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 55px;
+}
+.legend .redRound {
+  width: 8px;
+  height: 8px;
+  background-color: #e60000;
+  border-radius: 50%;
+  margin-left: 35px;
+  margin-top: 7px;
+  margin-right: -32px;
+}
+.legend .blackRound {
+  width: 8px;
+  height: 8px;
+  background-color: #282d30;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-right: -32px;
+} */
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.sc-ktwNLz.cGwSSo
+  > div
+  > svg
+  > g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis
+  > g
+  > g:nth-child(15)
+  > text
+  > tspan:nth-child(2n) {
+  display: none;
+}
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.sc-jTQDJr.dHVOVN
+  > div
+  > svg
+  > g.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis
+  > g
+  > g:nth-child(2)
+  > text
+  > tspan:nth-child(2n) {
+  display: none;
+}

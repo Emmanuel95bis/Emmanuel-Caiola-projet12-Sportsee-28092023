@@ -1,0 +1,13 @@
+.banner h1 {
+  font-size: 48;
+  font-weight: 500;
+}
+
+.banner span {
+  color: #ff0101;
+}
+
+.banner p {
+  font-size: 18;
+  font-weight: 400;
+}

@@ -1,0 +1,44 @@
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(2) {
+  background: black;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(2)
+  > svg
+  > g.recharts-layer.recharts-polar-angle-axis
+  > g
+  > g:nth-child(5)
+  > text
+  > tspan {
+  top: 100px;
+  left: 100px;
+}
+
+#root
+  > div
+  > div.main
+  > div.home-graphics
+  > div.home-second-graphic
+  > div:nth-child(2)
+  > svg
+  > g.recharts-layer.recharts-polar-angle-axis
+  > g
+  tspan {
+  text-align: left;
+  position: absolute;
+  margin-top: 10%;
+  font-family: roboto;
+  font-size: 12px;
+  font-weight: 500;
+  fill: white;
+}
