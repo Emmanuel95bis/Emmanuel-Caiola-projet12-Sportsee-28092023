@@ -29,8 +29,6 @@ const renderLegend = () => {
 };
 
 function Barchart(activityData) {
-  console.log("barchart");
-  console.log(activityData);
   let data;
   if (activityData.activityData !== "apiFailed") {
     data = activityData.activityData.data.sessions;

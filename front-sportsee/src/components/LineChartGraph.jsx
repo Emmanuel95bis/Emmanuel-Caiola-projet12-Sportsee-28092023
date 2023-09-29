@@ -51,8 +51,6 @@ const LineChartGraph = (averageData) => {
       },
     ];
   }
-  console.log("linechart");
-  console.log(data);
 
   return (
     <LineGraph>

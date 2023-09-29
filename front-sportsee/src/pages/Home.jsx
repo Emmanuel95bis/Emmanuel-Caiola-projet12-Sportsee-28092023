@@ -11,49 +11,31 @@ import { Usefetch } from "../util/hook/Usefetch";
 import { Loader } from "../util/loader/atoms";
 
 function Home() {
-  const userId = 12;
+  const userId = 18;
 
   let {
     isLoading: userIsLoading,
     data: userData,
     error: userError,
   } = Usefetch(userId, "user");
-  console.log("1111111111111");
-  console.log(userData);
-  console.log(`error :${userError}`);
-  console.log(`loading :${userIsLoading}`);
 
   let {
     isLoading: activityIsLoading,
     data: activityData,
     error: activityError,
   } = Usefetch(userId, "activity");
-  console.log("222222222222222");
-  console.log(activityData);
-  console.log(`error :${activityError}`);
-  console.log(`loading :${activityIsLoading}`);
 
   let {
     isLoading: averageIsLoading,
     data: averageData,
     error: averageError,
   } = Usefetch(userId, "average-sessions");
-  console.log("333333333333333");
-  console.log(averageData);
-  console.log(`error :${averageError}`);
-  console.log(`loading :${averageIsLoading}`);
 
   let {
     isLoading: performanceIsLoading,
     data: performanceData,
     error: performanceError,
   } = Usefetch(userId, "performance");
-
-  console.log("4444444444444444");
-  console.log(performanceData);
-  console.log(`error :${performanceError}`);
-  console.log(`loading :${performanceIsLoading}`);
-  console.log("youpi");
 
   if (
     userIsLoading ||
@@ -71,10 +53,7 @@ function Home() {
     performanceError !== false
   ) {
     userData = activityData = performanceData = averageData = "apiFailed";
-    console.log("erreur de api");
-    console.log(userError);
   }
-  console.log(userData);
 
   return (
     <div>

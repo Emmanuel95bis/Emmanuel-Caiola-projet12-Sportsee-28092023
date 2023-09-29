@@ -18,8 +18,6 @@ const PieChartGraph = (userData) => {
     data = [{ name: "value", value: userScore * 100 }];
   }
 
-  console.log("pie");
-  console.log(data);
   return (
     <Score>
       <h1 className="title">Score</h1>
