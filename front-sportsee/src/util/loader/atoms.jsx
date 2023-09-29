@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import colors from "./colors";
+import colors from "../variables/colors";
 import styled, { keyframes } from "styled-components";
 
 const rotate = keyframes`

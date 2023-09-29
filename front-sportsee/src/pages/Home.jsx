@@ -7,8 +7,8 @@ import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import Results from "../components/Results";
 import Banner from "../components/Banner";
-import { Usefetch } from "../util/Usefetch";
-import { Loader } from "../style/atoms";
+import { Usefetch } from "../util/hook/Usefetch";
+import { Loader } from "../util/loader/atoms";
 
 function Home() {
   const userId = 12;
