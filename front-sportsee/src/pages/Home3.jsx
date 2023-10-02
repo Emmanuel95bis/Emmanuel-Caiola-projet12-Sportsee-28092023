@@ -9,6 +9,7 @@ import Results from "../components/Results";
 import Banner from "../components/Banner";
 import { Usefetch } from "../util/hook/Usefetch";
 import { Loader } from "../util/loader/atoms";
+import { useState } from "react";
 import { useEffect } from "react";
 
 function Home() {
@@ -16,75 +17,50 @@ function Home() {
   const userId = 12;
   console.log("home");
 
-  useEffect(() => {
-    /*
   const [user, setUser] = useState({
-        isLoading: false,
-        data: [],
-        error: "",
-    })
-    const [activity, setActivity] = useState({})
-    const [average, setAverage] = useState({})
-    const [performance, setPerformance] = useState({})
+    isLoading: false,
+    data: [],
+    error: "",
+  });
+  const [activity, setActivity] = useState({
+    isLoading: false,
+    data: [],
+    error: "",
+  });
+  const [average, setAverage] = useState({
+    isLoading: false,
+    data: [],
+    error: "",
+  });
+  const [performance, setPerformance] = useState({
+    isLoading: false,
+    data: [],
+    error: "",
+  });
 
-    useEffect(() => {
-        setUser(Usefetch(userId, "user"))
-        setActivity(Usefetch(userId, "activity"))
-        setAverage(Usefetch(userId, "average-sessions"))
-        setPerformance( Usefetch(userId, "performance"))
-
-    }, [])
-
-
-    if (
-        user.isLoading ||
-        average.isLoading ||
-        activityIsLoading ||
-        performanceIsLoading
-    )
-*/
-
-    let {
-      isLoading: userIsLoading,
-      data: userData,
-      error: userError,
-    } = Usefetch(userId, "user");
-
-    let {
-      isLoading: activityIsLoading,
-      data: activityData,
-      error: activityError,
-    } = Usefetch(userId, "activity");
-
-    let {
-      isLoading: averageIsLoading,
-      data: averageData,
-      error: averageError,
-    } = Usefetch(userId, "average-sessions");
-
-    let {
-      isLoading: performanceIsLoading,
-      data: performanceData,
-      error: performanceError,
-    } = Usefetch(userId, "performance");
+  useEffect(() => {
+    setUser(Usefetch(userId, "user"));
+    setActivity(Usefetch(userId, "activity"));
+    setAverage(Usefetch(userId, "average-sessions"));
+    setPerformance(Usefetch(userId, "performance"));
   }, []);
 
   if (
-    userIsLoading ||
-    averageIsLoading ||
-    activityIsLoading ||
-    performanceIsLoading
+    user.isLoading ||
+    average.isLoading ||
+    activity.isLoading ||
+    performance.isLoading
   ) {
     return <Loader />;
   }
 
   if (
-    userError !== false ||
-    activityError !== false ||
-    averageError !== false ||
-    performanceError !== false
+    user.error !== false ||
+    activity.error !== false ||
+    average.error !== false ||
+    performance.error !== false
   ) {
-    userData = activityData = performanceData = averageData = "apiFailed";
+    user.data = activity.data = performance.data = average.data = "apiFailed";
   }
 
   return (
@@ -94,15 +70,15 @@ function Home() {
         <Navigation />
         <div className="home">
           <div className="home-graphics">
-            <Banner userData={userData} />
-            <Barchart activityData={activityData} />
+            <Banner userData={user.data} />
+            <Barchart activityData={activity.data} />
             <div className="home-second-graphic">
-              <LineChartGraph averageData={averageData} />
-              <PolarRadiusAxisGraphic performanceData={performanceData} />
-              <PieChartGraph userData={userData} />
+              <LineChartGraph averageData={average.data} />
+              <PolarRadiusAxisGraphic performanceData={performance.data} />
+              <PieChartGraph userData={user.data} />
             </div>
           </div>
-          <Results userData={userData} />
+          <Results userData={user.data} />
         </div>
       </div>
     </div>
