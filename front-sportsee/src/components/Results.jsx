@@ -55,9 +55,9 @@ function Results(userData) {
     <div className="results">
       {array.map((param, index) => (
         <div key={index} className="result-item">
-          <div className={`result_logo${index}`}></div>
-          <img src={param.logo} alt={`logo des ${param.titre}`} />
-
+          <div className={`result_logo${index}`}>
+            <img src={param.logo} alt={`logo des ${param.titre}`} />
+          </div>
           <div className="result_texts">
             <span>{param.mesure}</span>
             <span>{param.titre}</span>

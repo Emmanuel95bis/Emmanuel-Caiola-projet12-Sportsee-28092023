@@ -9,35 +9,65 @@ import Results from "../components/Results";
 import Banner from "../components/Banner";
 import { Usefetch } from "../util/hook/Usefetch";
 import { Loader } from "../util/loader/atoms";
+import { useEffect } from "react";
 
 function Home() {
   //userId 12 ou 18
   const userId = 12;
   console.log("home");
 
-  let {
-    isLoading: userIsLoading,
-    data: userData,
-    error: userError,
-  } = Usefetch(userId, "user");
+  useEffect(() => {
+    /*
+  const [user, setUser] = useState({
+        isLoading: false,
+        data: [],
+        error: "",
+    })
+    const [activity, setActivity] = useState({})
+    const [average, setAverage] = useState({})
+    const [performance, setPerformance] = useState({})
 
-  let {
-    isLoading: activityIsLoading,
-    data: activityData,
-    error: activityError,
-  } = Usefetch(userId, "activity");
+    useEffect(() => {
+        setUser(Usefetch(userId, "user"))
+        setActivity(Usefetch(userId, "activity"))
+        setAverage(Usefetch(userId, "average-sessions"))
+        setPerformance( Usefetch(userId, "performance"))
 
-  let {
-    isLoading: averageIsLoading,
-    data: averageData,
-    error: averageError,
-  } = Usefetch(userId, "average-sessions");
+    }, [])
 
-  let {
-    isLoading: performanceIsLoading,
-    data: performanceData,
-    error: performanceError,
-  } = Usefetch(userId, "performance");
+
+    if (
+        user.isLoading ||
+        average.isLoading ||
+        activityIsLoading ||
+        performanceIsLoading
+    )
+*/
+
+    let {
+      isLoading: userIsLoading,
+      data: userData,
+      error: userError,
+    } = Usefetch(userId, "user");
+
+    let {
+      isLoading: activityIsLoading,
+      data: activityData,
+      error: activityError,
+    } = Usefetch(userId, "activity");
+
+    let {
+      isLoading: averageIsLoading,
+      data: averageData,
+      error: averageError,
+    } = Usefetch(userId, "average-sessions");
+
+    let {
+      isLoading: performanceIsLoading,
+      data: performanceData,
+      error: performanceError,
+    } = Usefetch(userId, "performance");
+  }, []);
 
   if (
     userIsLoading ||

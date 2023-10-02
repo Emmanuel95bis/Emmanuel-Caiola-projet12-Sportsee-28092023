@@ -4,6 +4,7 @@
 }
 
 .home {
+  margin: 16px auto;
   display: flex;
   flex-direction: row;
 }
