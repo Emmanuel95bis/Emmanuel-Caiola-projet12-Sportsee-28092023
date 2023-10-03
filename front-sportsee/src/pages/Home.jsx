@@ -12,8 +12,7 @@ import { Loader } from "../util/loader/atoms";
 
 function Home() {
   //userId 12 ou 18
-  const userId = 12;
-  console.log("home");
+  const userId = 18;
 
   let {
     isLoading: userIsLoading,

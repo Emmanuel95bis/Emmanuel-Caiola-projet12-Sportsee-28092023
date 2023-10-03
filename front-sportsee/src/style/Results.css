@@ -19,7 +19,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+  padding-right: 10px;
 }
 
 .result_texts span:nth-child(1) {
@@ -105,6 +106,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-left: 20px;
+    margin-top: 10px;
   }
   .result-item {
     display: flex;
@@ -125,6 +127,14 @@
     width: 60px;
     height: 60px;
     margin-left: 20px;
+  }
+
+  .result_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10px;
+    padding-right: 10px;
   }
 
   #root > div > div.main > div.home > div.results > div:nth-child(1) > img {

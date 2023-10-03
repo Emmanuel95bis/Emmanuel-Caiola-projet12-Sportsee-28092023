@@ -2,7 +2,6 @@ import "../style/Banner.css";
 
 function Banner(userData) {
   let userName = "";
-
   if (userData.userData !== "apiFailed") {
     userName = userData.userData.data.userInfos.firstName;
   } else {
